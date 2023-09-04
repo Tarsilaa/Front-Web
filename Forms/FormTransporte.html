@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <header>
+        <h1>Formulário de Transporte</h1>
+    </header>
+    <article>
+        <form action="mailto:tarsilamout15@gmail.com" method="post" 
+              oninput="resultado.value = parseInt(valor01.value) + parseInt(valor02.value)">
+            <fieldset>
+                <legend><strong>Identificação</strong></legend>
+                <br>
+                <label for="cNome">Nome</label>
+                <input type="text" name="nome" id="cNome" size="50" placeholder="Maria dos Santos Oliveira ">
+                <br> <br>
+                <label for="email"><e-Mail></label>
+                    <input type="email" id="email" name="email" size="50" placeholder="exemplo@exemplo.com">
+                    <br> <br>
+                    <p>Voce mora</p>
+                    <input type="radio" name="lugar" id="city" value="C">
+                    <label for="city">Cidade</label>
+                    <br>
+                    <input type="radio" name="lugar" id="downtown" value="D">
+                    <label for="downtown">interior</label>
+                </fieldset>
+                    <br> <br>
+                    <fieldset>
+                        <legend><strong>Indetificações Extras</strong></legend>
+                    <p>Qual o meio de Transporte voce usa</p>
+                    <input type="checkbox" name="Transporte1" id="bike" value="bike">
+                    <label for="bike">Bicicleta</label>
+                    <br>
+                    <input type="checkbox" name="Transporte2" id="car" value="car">
+                    <label for="car">Carro</label>
+                    <br>
+                    <input type="checkbox" name="Transporte3" id="metro" value="metro">
+                    <label for="metro">Metro</label>
+                    <br>
+                    <input type="checkbox" name="Transporte4" id="bus" value="bus">
+                    <label for="bus">Onibus</label>
+                    <br> <br>
+
+                    <!--Select cria uma lista de opções-->
+                    <label for="game">Escolhar seu tipo de jogo: &nbsp;</label>
+                    <select name="game" id="game">
+                        <!--option é a opções da lista-->
+                        <!--value são os valores de escolha-->
+                        <option value="fps">FPS</option>
+                        <option value="adv">Adventure</option>
+                        <option value="rpg">RPG</option>
+                        <option value="moba">M.O.B.A</option>
+                        <option value="sport">Sport's</option>
+                        <option value="puzzle">Puzzle</option>
+                    </select>
+                    <br><br><br>
+                    <!-- Aqui se inicia o datalist ou lista de dados-->
+                    <label for="região">Escolha sua Cidade: &nbsp;</label>
+                    <input list="cidade" name="city2" id="regiao" placeholder="Digite sua cidade" autocomplete="on"> 
+                    <!--datalist é a lista de opcões-->
+                    <datalist id="cidade">
+                        <option value="Recife"></option>
+                        <option value="Olinda"></option>
+                        <option value="Cabo"></option>
+                        <option value="Paulista"></option>
+                        <option value="Moreno"></option>
+                        <option value="Camaragibe"></option>
+                        <option value="Jaboatão dos Guararapes"></option>
+                        <option value="Cabrobó"></option>
+                    </datalist>
+            </fieldset>
+                <br><br>
+                <fieldset>
+                    <legend><strong>Sua Opinião</strong></legend>
+                <label for="valor01">O quanto voce curtiu o Formulário</label>
+                <br><br>
+                0 
+                <input type="range" id="valor01" name="valor01">
+                100 +
+                <input type="number" name="valor02" id="valor02" value="10">
+                =
+                <output name="resultado" id="resultado"></output>
+                <br>
+                <p>Sugestões, elogios e críticas</p>
+                <textarea name="msg" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
+                <br><br>
+                <input type="submit" value="enviar">
+            </fieldset>
+        </form>
+    </article>
+    <br><br><br><hr>
+    <footer>
+<small>by Tarsila &copy;</small>
+    </footer>
+</body>
+</html>

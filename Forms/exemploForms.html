@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Formulário</title>
+</head>
+<body>
+    <header>
+        <h1>Exemplo de Formulário</h1>
+    </header>
+    <article>
+        <!--label para criar rótulo-->
+        <form action="#">
+            <label for="nome">Nome:</label>
+            <!--required para tornar o preenchimento obrigatório-->
+            <input type="text" name="" id="nome" required>
+            <br>
+            <br>
+            <label for="idade">Idade:</label>
+            <!--id vincula o input com o for do label-->
+            <input type="number" name="idade" id="idade">
+            <br>
+            <br>
+            <label for="cor">Sua cor favorita:</label>
+            <!--Type define o tipo de input-->
+            <input type="color" name="cor" id="cor">
+            <br>
+            <br>
+            <label for="email">e-Mail:</label>
+            <input type="email" name="email" id="email">
+            <br>
+            <!--Valeu é o valor que será escrito no botão-->
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </article>
+    <small>by Tarsila &copy;</small>
+</body>
+</html>
