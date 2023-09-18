@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body {
+    font-size: 10px;
+}
+
+section#primeira {
+    background-color: aqua;
+}
+.primeiro_bloco {
+    font-size: 0.5em;
+    background-color: blueviolet;
+}
+
+.segundo_bloco {
+    font-size: 0.75em;
+}
+
+.terceiro_bloco {
+    background-color: blue;
+    font-size: 1em;
+}
+
+.quarto_bloco {
+    background-color: palevioletred;
+    font-size: 1.5em;
+}
+
+.quinto_bloco {
+    background-color: brown;
+    font-size: 1.75em;
+}
+
+.sexto_bloco {
+    background-color: purple;
+    font-size: 2em;
+    
+}
